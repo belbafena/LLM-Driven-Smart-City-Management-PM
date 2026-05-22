@@ -1,0 +1,72 @@
+[
+  {
+    "case_id": "C001",
+    "scenario": "High traffic persistence during peak hours",
+    "conditions": {
+      "moving_avg": "above_p75",
+      "lag_traffic": "above_p75",
+      "time": "peak"
+    },
+    "congestion": "HIGH",
+    "action_taken": "adaptive traffic signal control with extended green phases",
+    "effect": "reduced congestion levels and improved traffic flow"
+  },
+  {
+    "case_id": "C002",
+    "scenario": "Sustained traffic buildup approaching congestion",
+    "conditions": {
+      "moving_avg": "above_p75",
+      "lag_traffic": "between_p50_p75"
+    },
+    "congestion": "HIGH",
+    "action_taken": "dynamic rerouting combined with signal timing optimization",
+    "effect": "redistributed traffic load and reduced bottlenecks"
+  },
+  {
+    "case_id": "C003",
+    "scenario": "Low traffic during off-peak hours",
+    "conditions": {
+      "moving_avg": "below_p50",
+      "lag_traffic": "below_p50",
+      "time": "off_peak"
+    },
+    "congestion": "LOW",
+    "action_taken": "maintain standard signal timing with routine monitoring",
+    "effect": "ensured smooth and uninterrupted traffic flow"
+  },
+  {
+    "case_id": "C004",
+    "scenario": "Moderate traffic approaching congestion threshold",
+    "conditions": {
+      "moving_avg": "between_p50_p75",
+      "lag_traffic": "between_p50_p75"
+    },
+    "congestion": "MEDIUM",
+    "action_taken": "increase monitoring and prepare for potential signal adjustments",
+    "effect": "prevented escalation into high congestion"
+  },
+  {
+    "case_id": "C005",
+    "scenario": "High traffic with rainfall during peak hours",
+    "conditions": {
+      "moving_avg": "above_p75",
+      "lag_traffic": "above_p75",
+      "rainfall": "present",
+      "time": "peak"
+    },
+    "congestion": "HIGH",
+    "action_taken": "extend signal timing and issue driver warnings through traffic systems",
+    "effect": "mitigated congestion impact under adverse weather conditions"
+  },
+  {
+    "case_id": "C006",
+    "scenario": "Low traffic with moderate persistence",
+    "conditions": {
+      "moving_avg": "below_p50",
+      "lag_traffic": "between_p50_p75"
+    },
+    "congestion": "LOW",
+    "action_taken": "maintain operations while monitoring for potential changes",
+    "effect": "ensured stability while observing potential transitions"
+  }
+]

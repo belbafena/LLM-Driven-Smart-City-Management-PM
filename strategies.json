@@ -1,0 +1,86 @@
+[
+  {
+    "strategy_id": "S001",
+    "condition": "High congestion with strong traffic persistence",
+    "trigger": {
+      "moving_avg": "above_p75",
+      "lag_traffic": "above_p75"
+    },
+    "actions": [
+      "Apply adaptive traffic signal control with extended green phases",
+      "Implement dynamic rerouting to redistribute traffic flow",
+      "Activate real-time congestion monitoring for continuous adjustment"
+    ],
+    "priority": "high"
+  },
+  {
+    "strategy_id": "S002",
+    "condition": "High traffic during peak periods",
+    "trigger": {
+      "moving_avg": "above_p75",
+      "time": "peak"
+    },
+    "actions": [
+      "Increase green signal duration on major corridors",
+      "Coordinate signal timing across adjacent intersections",
+      "Deploy traffic management measures if congestion escalates"
+    ],
+    "priority": "high"
+  },
+  {
+    "strategy_id": "S003",
+    "condition": "Moderate traffic approaching congestion threshold",
+    "trigger": {
+      "moving_avg": "between_p50_p75",
+      "lag_traffic": "between_p50_p75"
+    },
+    "actions": [
+      "Increase monitoring of traffic conditions",
+      "Prepare for potential signal timing adjustments",
+      "Optimize traffic flow through minor signal coordination"
+    ],
+    "priority": "medium"
+  },
+  {
+    "strategy_id": "S004",
+    "condition": "Low traffic with stable conditions",
+    "trigger": {
+      "moving_avg": "below_p50",
+      "lag_traffic": "below_p50"
+    },
+    "actions": [
+      "Maintain standard signal timing operations",
+      "Continue routine traffic monitoring",
+      "Use low-demand periods for system checks if needed"
+    ],
+    "priority": "low"
+  },
+  {
+    "strategy_id": "S005",
+    "condition": "High traffic under rainfall conditions",
+    "trigger": {
+      "moving_avg": "above_p75",
+      "rainfall": "present"
+    },
+    "actions": [
+      "Extend signal timing to accommodate slower traffic movement",
+      "Provide driver warnings through smart traffic systems",
+      "Increase monitoring for safety and congestion risks"
+    ],
+    "priority": "high"
+  },
+  {
+    "strategy_id": "S006",
+    "condition": "Low traffic with moderate persistence",
+    "trigger": {
+      "moving_avg": "below_p50",
+      "lag_traffic": "between_p50_p75"
+    },
+    "actions": [
+      "Maintain current operations while monitoring for potential changes",
+      "Observe traffic trends for early signs of buildup",
+      "Avoid unnecessary signal adjustments"
+    ],
+    "priority": "low"
+  }
+]

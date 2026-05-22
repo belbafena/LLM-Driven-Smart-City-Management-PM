@@ -1,0 +1,44 @@
+[
+  {
+    "rule_id": "R001",
+    "concept": "traffic persistence",
+    "description": "Traffic persistence, reflected by moving average and lag traffic, is the strongest indicator of congestion and should be prioritized in all decisions",
+    "importance": "primary",
+    "related_features": ["moving_avg", "lag_traffic"]
+  },
+  {
+    "rule_id": "R002",
+    "concept": "temporal demand",
+    "description": "Traffic demand varies by time of day, with peak hours increasing congestion likelihood",
+    "importance": "secondary",
+    "related_features": ["time"]
+  },
+  {
+    "rule_id": "R003",
+    "concept": "threshold-based interpretation",
+    "description": "Traffic conditions should be interpreted relative to statistical thresholds (P50 and P75) to determine low, moderate, and high traffic intensity",
+    "importance": "primary",
+    "related_features": ["moving_avg", "lag_traffic"]
+  },
+  {
+    "rule_id": "R004",
+    "concept": "weather influence",
+    "description": "Rainfall has a secondary impact on traffic flow and may increase congestion risk under high traffic conditions",
+    "importance": "minor",
+    "related_features": ["rainfall"]
+  },
+  {
+    "rule_id": "R005",
+    "concept": "low traffic stability",
+    "description": "When traffic indicators are below P50 thresholds, conditions are stable and do not require active intervention",
+    "importance": "primary",
+    "related_features": ["moving_avg", "lag_traffic"]
+  },
+  {
+    "rule_id": "R006",
+    "concept": "high congestion response",
+    "description": "When traffic indicators exceed P75 thresholds, active traffic management strategies such as signal adjustment and rerouting are required",
+    "importance": "primary",
+    "related_features": ["moving_avg", "lag_traffic"]
+  }
+]
